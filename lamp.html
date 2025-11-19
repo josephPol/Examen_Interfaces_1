@@ -7,6 +7,7 @@
     <title>Lumina - Lámparas de Lujo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Variables y reset básico */
         :root {
             --primary: #D4AF37;
             --secondary: #333129;
@@ -34,7 +35,7 @@
             padding: 0 20px;
         }
 
-        /* Header */
+        /* Header simplificado */
         header {
             background-color: var(--secondary);
             padding: 15px 0;
@@ -64,27 +65,10 @@
             color: var(--primary);
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
         }
 
         .nav-menu a:hover {
             color: var(--accent);
-        }
-
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent);
-            transition: all 0.3s ease;
-        }
-
-        .nav-menu a:hover::after {
-            width: 100%;
         }
 
         .header-icons, .footer-social {
@@ -95,13 +79,11 @@
         .header-icons i, .footer-social i {
             font-size: 1.2rem;
             color: var(--primary);
-            transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .header-icons i:hover, .footer-social i:hover {
             color: var(--accent);
-            transform: scale(1.1);
         }
 
         .mobile-menu-btn {
@@ -142,7 +124,7 @@
             margin-bottom: 30px;
         }
 
-        /* Common Components */
+        /* Botón simplificado */
         .btn {
             display: inline-block;
             background-color: var(--primary);
@@ -151,7 +133,6 @@
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s ease;
             border: 2px solid var(--primary);
         }
 
@@ -160,27 +141,17 @@
             color: var(--primary);
         }
 
+        /* Elementos de imagen simplificados */
         .gallery-item, .content-image, .map-container {
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
         }
 
         .gallery-item img, .content-image img, .map-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: all 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.05);
         }
 
         /* Gallery Section */
@@ -250,7 +221,6 @@
         .footer-contact a {
             color: var(--primary);
             text-decoration: none;
-            transition: all 0.3s ease;
         }
 
         .footer-contact a:hover {
